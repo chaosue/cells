@@ -209,6 +209,18 @@
   "infopanel.detached.dock": {
     "other": "停靠在右边栏"
   },
+  "infopanel.card.detach": {
+    "other": "Detach in a separate panel"
+  },
+  "infopanel.detached.minimize": {
+    "other": "Minimize Panel"
+  },
+  "infopanel.detached.maximize": {
+    "other": "Open Panel"
+  },
+  "infopanel.detached.dock": {
+    "other": "Dock in the right-hand column"
+  },
   "pinned-bookmarks.other": {
     "other": "全部文件"
   },

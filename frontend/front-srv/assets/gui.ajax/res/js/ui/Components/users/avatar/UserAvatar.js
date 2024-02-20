@@ -339,9 +339,9 @@ class UserAvatar extends React.Component{
         if(avatar){
             let avUrl= avatar;
             if (avUrl.indexOf('?') >= 0) {
-                avUrl += '&dim=' + avatarSize
+                avUrl += '&dim=' + avatarSize * 2
             } else {
-                avUrl += '?dim=' + avatarSize
+                avUrl += '?dim=' + avatarSize * 2
             }
             avatarIcon = <FontIcon style={{
                 backgroundImage:"url("+avUrl +")",

@@ -138,6 +138,6 @@ import (
 
 func main() {
 	common.PackageType = "PydioHome"
-	common.PackageLabel = "Pydio Cells Home Edition"
+	common.PackageLabel = "为基企业网盘"
 	cmd.Execute()
 }

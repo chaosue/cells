@@ -72,18 +72,6 @@ const SplashDialog = createReactClass({
         this.dismiss();
     },
 
-    openDocs(){
-        open("https://pydio.com/en/docs");
-    },
-
-    openForum(){
-        open("https://forum.pydio.com");
-    },
-
-    openGithub(){
-        open("https://github.com/pydio/cells/issues");
-    },
-
     getInitialState(){
         return {aboutContent: null};
     },
@@ -109,17 +97,11 @@ const SplashDialog = createReactClass({
         return (
             <div style={{height:'100%', width: '100%'}}>
                 <Card style={{borderRadius: 0}}>
-                    <CardTitle title={pydio.Parameters.get('backend')['PackageLabel']}/>
-                    <Divider/>
-                    <CardActions style={{display:'flex', alignItems:'center'}}>
-                        <FlatButton primary={true} icon={<FontIcon className="mdi mdi-book-variant" />} label="Docs" onClick={this.openDocs} />
-                        <FlatButton primary={true} icon={<FontIcon className="mdi mdi-slack" />} label="Forums" onClick={this.openForum}/>
-                        <FlatButton primary={true} icon={<FontIcon className="mdi mdi-github-box" />} label="Issues" onClick={this.openGithub}/>
-                        <span style={{flex: 1}}/>
-                        <IconButton style={{width:40,height:40,padding:8}} iconStyle={{color:'#FF786A'}} iconClassName={"icomoon-cells"} onClick={() => {open('https://pydio.com/?utm_source=cells-about')} } tooltip={"Pydio.com"}/>
-                        <IconButton style={{width:40,height:40,padding:8}} iconStyle={{color:'#3b5998'}} iconClassName={"mdi mdi-facebook-box"} onClick={() => {open('https://facebook.com/Pydio')} } tooltip={"@Pydio"}/>
-                        <IconButton style={{width:40,height:40,padding:8}} iconStyle={{color:'#00acee'}} iconClassName={"mdi mdi-twitter-box"} onClick={() => {open('https://twitter.com/pydio')} } tooltip={"@pydio"}/>
+                    <CardActions style={{display:'flex', alignItems: 'center'}}>
+                        <IconButton style={{width:28,height:28,padding:0, margin: 0, marginRight: 0}} iconStyle={{color:'#FF786A', fontSize:'28px'}} iconClassName={"icomoon-cells"} />
+                        <CardTitle title={pydio.Parameters.get('backend')['PackageLabel']} style={{padding: 0}}/>
                     </CardActions>
+                    <Divider/>
                     <Divider/>
                     <CardText className={"credits-md"}>
                         {credit}

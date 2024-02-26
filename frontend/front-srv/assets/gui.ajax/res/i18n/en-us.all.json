@@ -314,6 +314,9 @@
   "task.status.Error": {
     "other": "An error happened!"
   },
+  "bigppanel.filter.default-hint": {
+    "other": "Quick Find..."
+  },
   "search.1": {
     "other": "files and folders"
   },

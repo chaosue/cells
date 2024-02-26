@@ -222,7 +222,7 @@ class CellCard extends React.Component{
                             {!loading &&
                                 <GenericLine
                                     iconClassName="mdi mdi-account-multiple"
-                                    legend={"Participants"}
+                                    legend={m(1410)}
                                     data={<SharedUsersStack size={30} acls={model.getAcls()} />}
                                 />
                             }
